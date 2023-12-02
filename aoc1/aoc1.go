@@ -1,4 +1,4 @@
-package main
+package aoc1
 
 import "fmt"
 
@@ -64,7 +64,7 @@ func match(sub string, check int) int {
 	return -1
 }
 
-func main() {
+func Aoc1() {
 	sum := 0
 	for {
 		var line string
