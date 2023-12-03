@@ -91,7 +91,11 @@ func Aoc3() {
 		}
 	}*/
 
-	for key, _ := range sym {
+	for key, symbol := range sym {
+		if symbol != "*" {
+			continue
+		}
+
 		var pos_pairs []pair
 		for i := key.line - 1; i <= key.line+1; i++ {
 			if i == key.line {
